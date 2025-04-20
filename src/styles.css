@@ -11,9 +11,12 @@
 }
 
 
+
+
   body {
-    color: #eeeeee;
-    font-family: 'Shadows Into Light', cursive;
+    color: #cabfab;
+    font-family: 'Shadows Into Light', sans-serif;
+    background-color: #cabfab;
 }
 
 .nav-bar {
@@ -36,6 +39,28 @@
   color: orange;
 }
 
+#header-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cabfab;
+    color: #eeeeee;    
+    margin-top: 4rem;
+}
+
+.title{
+    font-size: xx-large;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
+}
+
+.description{
+    font-size: x-large;
+    margin: 0 auto;
+}
+
 
 #container{
     display: flex;
@@ -43,9 +68,6 @@
     margin: 0 auto;
     height: inherit;
     background-color: #cabfab;
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius:200%;
-    border-bottom: 5px solid white;
 }
 
 @media(width < 700px){
@@ -59,7 +81,7 @@
     body{
         background-color: #cabfab;
         color: #eeeeee;
-        font-family: 'Shadows Into Light', cursive;
+        font-family: 'Shadows Into Light', sans-serif;
     }
     .nav-bar{
         display: flex;
@@ -70,11 +92,25 @@
     .nav-list{
         font-size: medium;
     }
+
+    .header-hero{
+        margin: -4rem 0 0 0;
+    }
+
+    .description{
+        font-size: large;
+        margin: -1rem 0 0 0;
+        padding: 0rem 3rem;
+        word-wrap: break-word;
+
+    }
+
     #container{
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         border: none;
+        margin: -1rem auto;
     }
     .half{
         min-width: 100%;
@@ -96,11 +132,18 @@
 .half{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 50%;
     position: relative;
-    margin: 5% auto;
+    margin: 10% auto;
     }
+
+
+
+/* scrollbar for when the list of songs becomes bigger */
+.scroll{
+    overflow-y: scroll;
+    height: 40rem;
+}
 
 .img{
     border-radius: 5%;
@@ -108,6 +151,9 @@
     margin: 0 auto 5% auto;
 }
 
+.titles{
+    margin: 0 auto 0.5rem auto;  font-size: xx-large; color: #eeeeee;
+}
 
 
 .about-container{
@@ -127,7 +173,7 @@ footer{
     text-align: center;
     margin: auto;
     height: inherit;
-    background-color: #ffffff;
+    background-color: #cabfab;
     padding: 1rem;
     color: #eeeeee;
 }
