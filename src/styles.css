@@ -11,16 +11,23 @@
 }
 
 
+  body {
+    color: #eeeeee;
+    font-family: 'Shadows Into Light', cursive;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #cabfab;
   height: 100px;
+  border-bottom:1px solid #eeeeee;
+
 }
 
 .nav-list {
-  color: white;
+  color: #eeeeee;
   text-decoration: none;
   font-size: 2rem;
 }
@@ -42,22 +49,32 @@
 }
 
 @media(width < 700px){
+    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Roboto:wght@100&display=swap');
     
-
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: #cabfab;
+        color: #eeeeee;
+        font-family: 'Shadows Into Light', cursive;
+    }
     .nav-bar{
         display: flex;
         flex-direction: row;
         min-height: fit-content;
-        font-size: small;
+        height: 50px;
     }
     .nav-list{
-        font-size: x-small;
+        font-size: medium;
     }
     #container{
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        border-radius: 0;
+        border: none;
     }
     .half{
         min-width: 100%;
@@ -66,9 +83,12 @@
     .img{
         min-width: 90%;
     }
-    .sound{
-        min-width: 90%;
+
+    #footer{
+        background-color: #cabfab;
+        color: #eeeeee;
     }
+
 
 }
 
@@ -79,22 +99,15 @@
     flex-wrap: wrap;
     width: 50%;
     position: relative;
-    margin: 10rem auto;
+    margin: 5% auto;
     }
 
 .img{
     border-radius: 5%;
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 5% auto;
 }
 
-.sound{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 60%;
-    margin: 1rem auto;
-}
 
 
 .about-container{
@@ -114,8 +127,8 @@ footer{
     text-align: center;
     margin: auto;
     height: inherit;
-    background-color: cabfab;
+    background-color: #ffffff;
     padding: 1rem;
-    border-top: 5px solid #eeeeee;
+    color: #eeeeee;
 }
     
