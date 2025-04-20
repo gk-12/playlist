@@ -16,27 +16,27 @@
   body {
     color: #cabfab;
     font-family: 'Shadows Into Light', sans-serif;
-    background-color: #cabfab;
+    background-color: #221F1F;
 }
 
 .nav-bar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #cabfab;
+  background-color: #221F1F;
   height: 100px;
-  border-bottom:1px solid #eeeeee;
+  margin: 2rem;
 
 }
 
 .nav-list {
-  color: #eeeeee;
+  color: #F5F5F1;
   text-decoration: none;
   font-size: 2rem;
 }
 
 .nav-list:hover {
-  color: orange;
+  color: #E50914;
 }
 
 #header-hero{
@@ -44,12 +44,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #cabfab;
-    color: #eeeeee;    
+    background-color: #221F1F;
+    color: #F5F5F1;    
     margin-top: 4rem;
 }
 
 .title{
+    color: #E50914;
     font-size: xx-large;
     text-align: center;
     margin: 0 auto;
@@ -67,7 +68,6 @@
     justify-content: space-between;
     margin: 0 auto;
     height: inherit;
-    background-color: #cabfab;
 }
 
 @media(width < 700px){
@@ -79,8 +79,8 @@
         padding: 0;
     }
     body{
-        background-color: #cabfab;
-        color: #eeeeee;
+        background-color: #221F1F;
+        color: #F5F5F1;
         font-family: 'Shadows Into Light', sans-serif;
     }
     .nav-bar{
@@ -88,6 +88,7 @@
         flex-direction: row;
         min-height: fit-content;
         height: 50px;
+        margin: auto;
     }
     .nav-list{
         font-size: medium;
@@ -121,7 +122,7 @@
     }
 
     #footer{
-        background-color: #cabfab;
+        background-color: #221F1F;
         color: #eeeeee;
     }
 
@@ -173,7 +174,6 @@ footer{
     text-align: center;
     margin: auto;
     height: inherit;
-    background-color: #cabfab;
     padding: 1rem;
     color: #eeeeee;
 }
